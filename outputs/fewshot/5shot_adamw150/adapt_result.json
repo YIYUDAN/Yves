@@ -1,0 +1,89 @@
+{
+  "task": "5shot",
+  "method": "foreground crop, random-initialized cosine head, support-set finetune, logistic regression readout",
+  "weights": "outputs/pretrain/best_wrn16_2_adamw150_shared.pth",
+  "seeds": [
+    2026,
+    1234,
+    777
+  ],
+  "epochs": 100,
+  "lr": 0.0001,
+  "crop_mode": "grabcut",
+  "c_value": 1.0,
+  "feature_mode": "global_max",
+  "tta": true,
+  "selection": [],
+  "correct": 166,
+  "total": 250,
+  "accuracy": 0.664,
+  "macro_f1": 0.6569672939654251,
+  "confusion_matrix": [
+    [
+      39,
+      10,
+      0,
+      1,
+      0
+    ],
+    [
+      9,
+      30,
+      0,
+      6,
+      5
+    ],
+    [
+      1,
+      6,
+      20,
+      13,
+      10
+    ],
+    [
+      1,
+      5,
+      3,
+      35,
+      6
+    ],
+    [
+      0,
+      0,
+      0,
+      8,
+      42
+    ]
+  ],
+  "class_dirs": [
+    "00",
+    "01",
+    "02",
+    "03",
+    "04"
+  ],
+  "class_names": [
+    "非洲野犬",
+    "黑足鼬",
+    "板条箱",
+    "沙漏",
+    "校车"
+  ],
+  "seed_results": [
+    {
+      "seed": 2026,
+      "correct": 168,
+      "accuracy": 0.672
+    },
+    {
+      "seed": 1234,
+      "correct": 170,
+      "accuracy": 0.68
+    },
+    {
+      "seed": 777,
+      "correct": 166,
+      "accuracy": 0.664
+    }
+  ]
+}
