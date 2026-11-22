@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+data/
+outputs/**/*.pth
+outputs/**/*.pt
+.idea/
+.vscode/
