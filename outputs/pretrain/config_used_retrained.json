@@ -1,0 +1,22 @@
+{
+  "config": {
+    "data_root": "data/base",
+    "output_dir": "outputs/pretrain",
+    "num_classes": 30,
+    "input_size": 224,
+    "batch_size": 24,
+    "epochs": 60,
+    "lr": 0.02,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "label_smoothing": 0.1,
+    "seed": 2026,
+    "num_workers": 0,
+    "warmup_epochs": 5,
+    "weight_tag": "retrained"
+  },
+  "device": "cuda",
+  "elapsed_seconds": 2367.479596376419,
+  "best_epoch": 54,
+  "best_val_acc": 0.4033333333333333
+}
